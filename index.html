@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Filter check boxes with Input search : AngularJs Solutions" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Filter check boxes with Input search</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/sivaphaneendra/AngularJs">View on GitHub</a>
+
+          <h1 id="project_title">Filter check boxes with Input search</h1>
+          <h2 id="project_tagline">AngularJs Solutions</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/sivaphaneendra/AngularJs/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/sivaphaneendra/AngularJs/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <p>&lt;!DOCTYPE html&gt;
+</p>
+
+<p></p>
+  Filter Checkbox<p></p>
+  <h1>
+<a name="hello-name" class="anchor" href="#hello-name"><span class="octicon octicon-link"></span></a>Hello {{name}}</h1>
+
+<pre><code>&lt;h3&gt;Shirt.&lt;/h3&gt;
+&lt;label&gt;Size:
+  &lt;input ng-model='shirt.size'&gt;
+&lt;/label&gt;
+&lt;br/&gt;
+&lt;label&gt;Colors:&lt;/label&gt;
+&lt;label ng-repeat="color in colors | filter:shirt.size"&gt;
+
+  &lt;input ng-model="selection[$parent.$index][$index]" type="checkbox" /&gt;{{color.label}}
+&lt;/label&gt;
+</code></pre>
+
+<p></p>
+
+<p></p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Filter check boxes with Input search maintained by <a href="https://github.com/sivaphaneendra">sivaphaneendra</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
