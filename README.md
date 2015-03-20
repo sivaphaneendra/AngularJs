@@ -1,4 +1,0 @@
-AngularJs
-=========
-
-AngularJs Solutions
